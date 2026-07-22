@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre — Rota Solo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <nav class="nav">
+    <a href="index.html" class="logo">Rota Solo</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="sobre.html" class="ativo">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="sobre-topo">
+  <div class="sobre-foto">
+    <img src="assets/foto-perfil.jpg" alt="Foto sua">
+  </div>
+  <div class="sobre-texto">
+    <h1>Sobre mim</h1>
+    <p>Escreva aqui sua historia: quando comecou a viajar sozinha, o que te motivou na primeira vez, e o que mudou desde entao.</p>
+    <p>Pode incluir um pouco do "porque" desse site existir — o desejo de ter um lugar proprio pra guardar o que hoje vive espalhado nos stories.</p>
+    <a href="destinos.html" class="botao">Ver minhas viagens</a>
+  </div>
+</section>
+
+<section class="secao container">
+  <div class="secao-titulo"><h2>O que guia minhas viagens</h2></div>
+  <div class="valores-grade">
+    <div class="valor-item"><h3>Autonomia</h3><p>Viajar no meu ritmo, decidir tudo sozinha, errar e acertar por conta propria.</p></div>
+    <div class="valor-item"><h3>Transparencia</h3><p>Valores reais, sem esconder o que custou ou o que nao deu certo.</p></div>
+    <div class="valor-item"><h3>Profundidade</h3><p>Menos lista de pontos turisticos, mais o que a viagem realmente muda em mim.</p></div>
+  </div>
+</section>
+
+<footer><p>Rota Solo &mdash; &copy; 2026</p></footer>
+
+<script src="js/dados.js"></script>
+<script src="js/principal.js"></script>
+<script>
+  document.getElementById('menuToggle').addEventListener('click', () => document.getElementById('menu').classList.toggle('aberto'));
+</script>
+</body>
+</html>

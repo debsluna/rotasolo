@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rota Solo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <nav class="nav">
+    <a href="index.html" class="logo">Rota Solo</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="post-conteudo"></div>
+
+<footer><p>Rota Solo &mdash; &copy; 2026</p></footer>
+
+<script src="js/dados.js"></script>
+<script src="js/principal.js"></script>
+<script>
+  document.getElementById('menuToggle').addEventListener('click', () => document.getElementById('menu').classList.toggle('aberto'));
+</script>
+</body>
+</html>

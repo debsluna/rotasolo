@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rota Solo — reflexoes e roteiros de viagens solo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <nav class="nav">
+    <a href="index.html" class="logo">Rota Solo</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html" class="ativo">Inicio</a></li>
+      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-conteudo">
+    <h1>15 paises, uma mala e muitas historias</h1>
+    <p>Roteiros, valores reais e reflexoes de quem viaja sozinha pelo mundo.</p>
+    <a href="destinos.html" class="botao">Ver destinos</a>
+  </div>
+</section>
+
+<section class="intro container">
+  <h2>Sobre esse espaco</h2>
+  <p style="max-width:560px; margin: 18px auto 0;">Aqui eu guardo o que hoje vive espalhado nos destaques do Instagram: os roteiros dia a dia, quanto gastei de verdade, e o que essas viagens sozinha me ensinaram.</p>
+  <div class="intro-numeros">
+    <div><div class="numero">15+</div><div class="numero-legenda">paises</div></div>
+    <div><div class="numero">100%</div><div class="numero-legenda">viagens solo</div></div>
+    <div><div class="numero">&infin;</div><div class="numero-legenda">historias pra contar</div></div>
+  </div>
+</section>
+
+<section class="secao">
+  <div class="secao-titulo"><h2>Destinos em destaque</h2></div>
+  <div class="grade-destinos" id="destaques"></div>
+</section>
+
+<section class="secao container">
+  <div class="secao-titulo"><h2>Explore por categoria</h2></div>
+  <div class="grade-categorias">
+    <a href="destinos.html?categoria=roteiro" class="categoria-item"><h3>Roteiros</h3><p>Dia a dia de cada viagem</p></a>
+    <a href="destinos.html?categoria=orcamento" class="categoria-item"><h3>Orcamento</h3><p>Quanto custou de verdade</p></a>
+    <a href="destinos.html?categoria=reflexao" class="categoria-item"><h3>Reflexoes</h3><p>O que fica depois da viagem</p></a>
+  </div>
+</section>
+
+<section class="faixa-mapa">
+  <h2>Todos os paises, num so lugar</h2>
+  <p>Veja o mapa interativo com todas as viagens ja feitas.</p>
+  <a href="mapa.html" class="botao">Ver mapa</a>
+</section>
+
+<footer><p>Rota Solo &mdash; &copy; 2026</p></footer>
+
+<script src="js/dados.js"></script>
+<script src="js/principal.js"></script>
+<script>
+  document.getElementById('menuToggle').addEventListener('click', () => document.getElementById('menu').classList.toggle('aberto'));
+</script>
+</body>
+</html>

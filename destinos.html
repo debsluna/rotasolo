@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinos — Rota Solo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <nav class="nav">
+    <a href="index.html" class="logo">Rota Solo</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="destinos.html" class="ativo">Destinos</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="secao container">
+  <div class="secao-titulo"><h1>Destinos</h1></div>
+  <div class="filtros">
+    <button class="filtro-categoria" data-categoria="">Todos</button>
+    <button class="filtro-categoria" data-categoria="roteiro">Roteiros</button>
+    <button class="filtro-categoria" data-categoria="orcamento">Orcamento</button>
+    <button class="filtro-categoria" data-categoria="reflexao">Reflexoes</button>
+    <select id="filtro-pais">
+      <option value="">Todos os paises</option>
+    </select>
+  </div>
+  <div class="grade-destinos" id="grade-destinos-completa"></div>
+</section>
+
+<footer><p>Rota Solo &mdash; &copy; 2026</p></footer>
+
+<script src="js/dados.js"></script>
+<script src="js/principal.js"></script>
+<script>
+  document.getElementById('menuToggle').addEventListener('click', () => document.getElementById('menu').classList.toggle('aberto'));
+</script>
+</body>
+</html>
